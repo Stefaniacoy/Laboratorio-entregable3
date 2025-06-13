@@ -21,14 +21,15 @@ let operacion = "";
 
 while (operacion !== "salir") {
     operacion = prompt('¿Qué operación deseas realizar? (suma, resta, multiplicacion, division) o escriba "salir" para terminar:');
-    let input1 = prompt("Ingrese el primer número:");
-    let input2 = prompt("Ingrese el segundo número:");
     
     if (operacion === "salir") {
         alert("Gracias por usar la calculadora. ¡Hasta pronto!");
         break;
     }
-    
+
+    let input1 = prompt("Ingrese el primer número:");
+    let input2 = prompt("Ingrese el segundo número:");
+        
     // Validar si la operación es válida
     if (
         operacion === "suma" ||
